@@ -7,7 +7,7 @@ import { images } from "../../constants";
 import FromField from "../../components/FromField";
 import { Link } from "expo-router";
 
-const SignIn = () => {
+const SignUp = () => {
 	const [form, setForm] = useState({
 		email: "",
 		password: "",
@@ -30,8 +30,14 @@ const SignIn = () => {
 						className="text-white text-semibold font-psemibold"
 						style={{ marginTop: 40, fontSize: 24 }}
 					>
-						Log in to Aora!
+						Sign up to Aora
 					</Text>
+					<FromField
+						title="Username"
+						value={form.username}
+						handleChangeText={(e) => setForm({ ...form, username: e })}
+						otherStyle="mt-7"
+					/>
 					<FromField
 						title="Email"
 						value={form.email}
@@ -65,17 +71,17 @@ const SignIn = () => {
 								fontSize: 13,
 							}}
 						>
-							Don't have account?
+							Have an account already?
 						</Text>
 						<Link
-							href="/sign-up"
+							href="/sign-in"
 							className="text-lg font-psemibold text-secondary"
 							style={{
 								fontSize: 13,
 								color: "#FF5722",
 							}}
 						>
-							Sign Up
+							Sign In
 						</Link>
 					</View>
 				</View>
@@ -84,4 +90,4 @@ const SignIn = () => {
 	);
 };
 
-export default SignIn;
+export default SignUp;
