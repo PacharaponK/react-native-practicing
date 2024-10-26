@@ -7,10 +7,10 @@ import { StatusBar } from "expo-status-bar";
 const App = () => {
 	return (
 		<View style={styles.container}>
-			<Text className="text-3xl font-pbold">App!!!</Text>
+			<Text className="text-3xl font-pblack">Aura!!!</Text>
 			<StatusBar style="auto" />
-			<Link href={"/profile"} style={{ color: "blue" }}>
-				Go to Profile
+			<Link href={"/home"} style={{ color: "blue" }}>
+				Go to Home
 			</Link>
 		</View>
 	);
