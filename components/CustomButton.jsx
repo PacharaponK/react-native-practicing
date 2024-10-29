@@ -21,6 +21,7 @@ const CustomButton = ({
 				justifyContent: "center",
 				alignItems: "center",
 				paddingHorizontal: 10,
+				marginTop: 20,
 			}}
 		>
 			<Text className={`text-primary font-psemibold text-lg ${textStyles}`}>
