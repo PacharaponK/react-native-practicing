@@ -8,14 +8,14 @@ const FromField = ({
 	value,
 	placeholder,
 	handleChangeText,
-	otherStyle,
+	otherStyles,
 	...props
 }) => {
 	const [showPassword, setShowPassword] = useState(false);
 	const [isFocused, setIsFocused] = useState(false);
 
 	return (
-		<View className={`space-y-2 ${otherStyle}`}>
+		<View className={`space-y-2 ${otherStyles}`}>
 			<Text className="text-base text-gray-100 font-pmedium">{title}</Text>
 			<View
 				style={{
